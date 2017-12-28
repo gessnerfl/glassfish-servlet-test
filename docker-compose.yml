@@ -1,0 +1,31 @@
+version: '2'
+
+services:
+    gf3j7:
+      container_name: gf3j7
+      build: ./3_1_2_2-java7
+      image: test-servlet-gf3j7:1.0
+      ports:
+        - "38181:8181"
+        - "34848:4848"
+    gf4j7:
+      container_name: gf4j7
+      build: ./4_1_2-java7
+      image: test-servlet-gf4j7:1.0
+      ports:
+        - "48181:8181"
+        - "44848:4848"
+    gf4j8:
+      container_name: gf4j8
+      build: ./4_1_2-java8
+      image: test-servlet-gf4j8:1.0
+      ports:
+        - "48281:8181"
+        - "44948:4848"
+    gf5j8:
+      container_name: gf5j8
+      build: ./5_0-java8
+      image: test-servlet-gf5j8:1.0
+      ports:
+        - "58181:8181"
+        - "54848:4848"
